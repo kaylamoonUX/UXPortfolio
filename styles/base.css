@@ -13,6 +13,14 @@
     color: black;
 }
 
+p {
+    font-family: var(--font);
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: .025em;
+}
+
 /* scoots body over away from nav bar */
 header, main, footer {
     margin-left: var(--nav-width);
@@ -42,10 +50,10 @@ nav img {
 }
 
 .nav-links {
-    padding-bottom: 2rem;
+    padding-bottom: 2.5rem;
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 1.5rem;
 }
 
 .current-page {
@@ -59,7 +67,7 @@ nav ul li a:hover {
 nav, ul, li, a {
     list-style: none;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     text-align: center;
 }
@@ -244,4 +252,64 @@ header {
 .case-study-images img {
     width: 75%;
     height: auto;
+}
+
+
+/* --------------------------- ABOUT --------------------------- */
+.about-h1 {
+    font-family: Suranna, sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+}
+
+.introduction {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 48px;
+
+    margin-top: 116px;
+    margin-right: var(--nav-width);
+    grid-column: 2/9;
+}
+
+.intro-blurb {
+    grid-column: 2/6;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.introduction img {
+    grid-column: 6/9;
+}
+
+.testimony {
+    margin-bottom: 16px;
+}
+
+.about-body {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 48px;
+    margin-right: var(--nav-width);
+}
+
+
+
+.more-about-me {
+    margin: 96px 0;
+    grid-column: 3/8;
+}
+
+.more-about-me h2 {
+    font-family: raleway, sans-serif;
+    font-size: 45px;
+    font-weight: 200;
+    
+    margin-bottom: 32px;
+}
+
+.more-about-me p {
+    margin-bottom: 24px;
 }
