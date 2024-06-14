@@ -1,55 +1,260 @@
 :root {
     --font: "Raleway", sans-serif;
+    --chiro-blue: #107BB9;
 }
 
 h1 {
     font-family: var(--font);
-    font-size: 104px;
+    font-size: 95px;
     font-weight: 200;
 }
 
 h2 {
     font-family: var(--font);
-    font-size: 72px;
+    font-size: 68px;
     font-weight: 500;
 }
 
 h3 {
     font-family: var(--font);
-    font-size: 54px;
+    font-size: 48px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 h4 {
     font-family: var(--font);
-    font-size: 42px;
+    font-size: 33px;
     font-weight: 700; 
 }
 
 h5 {
     font-family: var(--font);
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700; 
     text-transform: uppercase;
 }
 
-h6 {
-    font-family: var(--font);
-    font-size: 20px;
-    font-weight: 700; 
-}
-
 p {
     font-family: var(--font);
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 28px;
     font-weight: 400;
+    letter-spacing: .025em;
 }
 
 main {
-    margin: 0 92px;
+    margin: 0 200px 0 272px;
+}
+
+.moved-in {
+    margin: 0 72px;
 }
 
 .header {
+    margin: 24px 72px 110px;
+}
+
+.second-section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.header h1 {
+    color: var(--chiro-blue);
+}
+
+.header h4 {
+    margin-bottom: 24px;
+}
+
+.second-section-header .hero {
+    width: 95%;
+    height: auto;
+}
+
+.intro-total {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.intro-total h2 {
+    margin-bottom: 32px;
+}
+
+.introduction {
+    display: flex;
+    gap: 188px;
+}
+
+.intro-in h5 {
+    margin-bottom: 8px;
+}
+
+.intro-in .icons {
+    display: flex;
+    gap: 16px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 56px;
+}
+
+.title h2::after {
+    content: "";
+    display: flex;
+    justify-content: center;    
+    width: 100%;
+    height: 2
+    px;
+    background-color: var(--chiro-blue);
+    margin-top: 8px;
+}
+
+.section {
+    margin-bottom: 152px;
+}
+
+.overview {
+    margin-bottom: 56px;
+}
+
+.overview-heading {
+    margin-bottom: 32px;
+}
+
+.overview-heading h3 {
+    margin-bottom: 8px;
+}
+
+.overview-body h5 {
+    margin-bottom: 4px;
+}
+
+.overview-body p {
+    height: 52px;
+    margin-bottom: 24px;
+}
+
+.section-subheader {
     margin: 0 72px;
+}
+
+.section-subheader h3 {
+    margin-bottom: 8px;
+}
+
+.section-header {
+    margin-bottom: 72px;
+}
+
+.subtitle h4 {
+    margin-bottom: 32px;
+}
+
+.subtitle p {
+    margin-top: -24px;
+}
+
+.interview-questions h5 {
+    margin-bottom: 18px;
+}
+
+.question-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 16px;
+
+    margin-bottom: 60px;
+}
+
+.question {
+    border: solid 1px;
+    border-radius: 12px;
+    padding: 8px;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.subtitle {
+    margin: 56px 0 32px;
+}
+
+.subtitle h5 {
+    margin-bottom: 32px;
+}
+
+.img-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.persona-img {
+    width: 95%;
+    height: auto;
+}
+
+.centered-img{
+    width: 75%;
+    height: auto;
+}
+
+.smaller-img {
+    width: 75%;
+    height: auto;
+} 
+
+.frames {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 100px;
+}
+
+.patient-frames {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: center;
+}
+
+.patient-frames img {
+    width: 18%;
+    height: auto;
+}
+
+.chiro-frames {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: center;
+}
+
+.chiro-frames img {
+    width: 35%;
+    height: auto;
+}
+
+.final-adjustments {
+    margin-bottom: 64px;
+}
+
+.heading h3 {
+    margin-bottom: -40px;
+}
+
+.final-img {
+    margin-bottom: -32px;
 }
